@@ -1,0 +1,26 @@
+.card {
+    background-color: fff;
+    padding: 10px 0;
+    position: relative;
+    transition: all .2s;
+    &:not(:last-of-type){
+        border-bottom: 1px solid #ccc;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        float: left;
+    }
+    h1{
+        line-height: 100px;
+        text-align: right;
+        float: right;
+    }
+    &:active{
+        background-color: rgba($color: #000, $alpha: .1);
+    }
+}

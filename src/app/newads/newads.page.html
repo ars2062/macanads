@@ -1,0 +1,11 @@
+<app-header title="جدیدترینها"></app-header>
+<ion-content padding>
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="دریافت تبلیغات بیشتر">
+            <div class="card" *ngFor="let item of items" (click)="detail(item)">
+                <img src="{{item.image}}">
+                <h1>{{item.title}}</h1>
+            </div>
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ورود به برنامه</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="login()">
+    <ion-item>
+      <ion-input placeholder="شماره موبایل" type="tel" [(ngModel)]="user.phone" name="phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="رمز عبور" type="password" [(ngModel)]="user.password" name="password"></ion-input>
+    </ion-item>
+    <ion-button type="submit">ورود</ion-button>
+  </form>
+</ion-content>
